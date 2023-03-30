@@ -1,0 +1,134 @@
+.center {
+    padding: 0 10%;
+}
+
+@media only screen and (max-width: 800px) {
+    .center{
+        padding: 0 2%;
+    }
+    .table-wrapper {
+        font-size: 0.75rem;
+    }
+
+    tr > th {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .center{
+        padding: 10% 0%;
+        margin: 1% 1%;
+    }
+    .table-wrapper {
+        font-size: 0.6rem;
+    }
+
+    tr > th {
+        font-size: 0.75rem;
+    }
+}
+
+.divider {
+    padding: 5em 1em 1em 1em;
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+}
+
+.reverse.spotlight:nth-child(2n - 1) {
+    -moz-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.reverse.spotlight:nth-child(2n) {
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.countdown-container {
+    display: flex;
+    width: 95%;
+    max-width: 90%;
+    justify-content: space-between;
+    justify-self: center;
+    padding: 0% 3%;
+    margin: 0% 3%;
+  }
+  
+  .days-container,
+  .hours-container,
+  .minutes-container, 
+  .seconds-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+    border: 5px solid rgba(255,255,255,0.3);
+    width: 140px;
+    height: 140px;
+    border-radius: 99px;
+  }
+  
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 2.5em; 
+    margin: 10px 0;
+  }
+  
+  
+  .days-label,
+  .hours-label,
+  .minutes-label,
+  .seconds-label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 800px) {
+    
+    .countdown-container {
+      max-width: 80%;
+    }
+    
+    .days-container,
+    .hours-container,
+    .minutes-container, 
+    .seconds-container {
+      font-size: 0.5em;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+.use-flex {
+    display: grid;
+    justify-content: center;
+}
+
+table.white-text {
+  color: white;
+}
+
+#logo {
+  height: 85%;
+  padding: 5%;
+  margin: 5% 0%;
+}
+
+#logo2 {
+  width: 30%;
+}
