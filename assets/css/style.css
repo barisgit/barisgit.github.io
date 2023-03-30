@@ -97,6 +97,30 @@
     text-transform: uppercase;
     margin-bottom: 5px;
   }
+
+  #obvestila
+  {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: auto;
+  }
+
+  @media (max-width: 1200px) {
+  #obvestila
+{
+  grid-template-columns: 1fr 1fr;
+}
+.card {
+  width: 10rem;
+}
+  }
+
+.card {
+  margin: 0% 10%;
+  margin-top: 10%;
+}
   
   @media (max-width: 800px) {
     
@@ -112,10 +136,26 @@
       width: 100px;
       height: 100px;
     }
+
+    #predavanje {
+      width: 100%;
+      height: 500px;
+    }
+
+    #obvestila
+{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  width: 8rem;
+  margin: 5% 0;
+}
   }
 
 .use-flex {
-    display: grid;
+    display: flex;
     justify-content: center;
 }
 
