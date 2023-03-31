@@ -102,7 +102,7 @@
   {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin: auto;
   }
@@ -149,8 +149,8 @@
 }
 
 .card {
-  width: 8rem;
-  margin: 5% 0;
+  width: 6rem;
+  margin: 2% 0;
 }
   }
 
