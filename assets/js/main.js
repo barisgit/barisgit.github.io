@@ -137,7 +137,12 @@ const countDownClock = (number = 100, format = 'seconds') => {
 	enter number and format
 	days, hours, minutes or seconds
   */
-	var x = new Date("Apr 1, 2023 12:00:00");
+	var x = new Date("Apr 2, 2023 12:00:00");
 	var y = new Date();
 	let seconds = Math.abs(x.getTime() - y.getTime())/1000;
-  countDownClock(seconds, 'seconds');
+  
+	if(seconds < 3600) {
+		document.getElementById("cajt").innerHTML = "Nimaš več cajta!";
+	}
+	
+	countDownClock(seconds, 'seconds');
